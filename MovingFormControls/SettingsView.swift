@@ -65,6 +65,7 @@ struct SettingsView : View {
                 // This .fixedSize() modifier should make it so the Form
                 // does not scroll at all, but it does not always work.
                 .fixedSize(horizontal: false, vertical: true)
+                .scrollBounceBehavior(.basedOnSize)
             }
         }
         .frame(width: 425)
